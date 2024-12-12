@@ -1,0 +1,56 @@
+/*
+ * Base styles
+ * ============================================================ */
+
+html {
+  box-sizing: border-box;
+  line-height: 1.15;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--color--background1);
+  color: var(--color--gray1);
+  font-family: var(--font--poppins);
+  font-size: 1rem;
+  font-weight: var(--font-weight--regular);
+  margin: 0;
+  overflow-x: hidden;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: var(--color--gray1);
+}
+
+.scrollAuto {
+  overflow-y: unset;
+}
+
+.scrollLocked {
+  overflow-y: hidden;
+}
+
+.container {
+  display: flex;
+}
+
+.logo {
+  position: absolute;
+  max-width: 400;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mailto {
+  line-height: 1.5rem;
+  position: absolute;
+  bottom: 60px;
+  right: 40px;
+}

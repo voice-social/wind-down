@@ -1,0 +1,111 @@
+/*
+ * Base mixins
+ */
+
+/*
+ * Typography mixins
+ * ============================================================ */
+
+@define-mixin font $fontSize: 16px, $lineHeight: 1.5 {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+}
+
+@define-mixin font-48 {
+  @mixin font 48px, 1.25;
+}
+
+@define-mixin font-40 {
+  @mixin font 40px, 1.25;
+}
+
+@define-mixin font-32 {
+  @mixin font 32px, 1.31;
+}
+
+@define-mixin font-28 {
+  @mixin font 28px, 1.36;
+}
+
+@define-mixin font-24 {
+  @mixin font 24px, 1.67;
+}
+
+@define-mixin font-20 {
+  @mixin font 20px, 1.4;
+}
+
+@define-mixin font-18 {
+  @mixin font 18px, 1.44;
+}
+
+@define-mixin font-16 {
+  @mixin font 16px;
+}
+
+@define-mixin font-14 {
+  @mixin font 14px;
+}
+
+@define-mixin font-12 {
+  @mixin font 12px;
+}
+
+@define-mixin font-11 {
+  @mixin font 11px;
+}
+
+/*
+ * Utility mixins
+ * ============================================================ */
+
+@define-mixin borderDash {
+  background-image: repeating-linear-gradient(
+      0deg,
+      var(--color--gray1),
+      var(--color--gray1) 8px,
+      transparent 8px,
+      transparent 12px
+    ),
+    repeating-linear-gradient(90deg, var(--color--gray1), var(--color--gray1) 8px, transparent 8px, transparent 12px),
+    repeating-linear-gradient(180deg, var(--color--gray1), var(--color--gray1) 8px, transparent 8px, transparent 12px),
+    repeating-linear-gradient(270deg, var(--color--gray1), var(--color--gray1) 8px, transparent 8px, transparent 12px);
+  background-position: 0 0, 0 0, 100% 0, 0 100%;
+  background-repeat: no-repeat;
+  background-size: 1px 100%, 100% 1px, 1px 100%, 100% 1px;
+  border-image: repeating-linear-gradient(
+    0deg,
+    var(--color--gray1),
+    var(--color--gray1) 8px,
+    transparent 8px,
+    transparent 12px
+  );
+}
+
+@define-mixin fullWidth {
+  height: 100%;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  width: 100vw;
+}
+
+@define-mixin lineClamp $length: 1 {
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: $length;
+  overflow: hidden;
+}
+
+@define-mixin visuallyHidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}

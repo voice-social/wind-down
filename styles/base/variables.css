@@ -1,0 +1,64 @@
+/*
+ * Base variables
+ * ============================================================ */
+
+:root {
+  --box-shadow--modal: 0 0.25rem 1.875rem rgba(0, 0, 0, 0.25);
+  --box-shadow--navbar: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.15);
+  --box-shadow--slider-thumb-active: 0 0 0 8px rgb(104, 117, 217, 0.4);
+  --box-shadow--slider-thumb-hover: 0 0 0 8px rgb(104, 117, 217, 0.2);
+  --color--agreeing-green: #47e272;
+  --color--alerting-red1: #fa5e2d;
+  --color--alerting-red2: #f44336;
+  --color--background1: #161616;
+  --color--background2: #313131;
+  --color--background3: #393939;
+  --color--black: #000;
+  --color--cyan-blue: #bac2d2;
+  --color--dark-orange: #fe7f2a;
+  --color--gray1: #f3f3f3;
+  --color--gray2: #c2c2c2;
+  --color--gray3: #8d8d8d;
+  --color--gray4: #585858;
+  --color--gray5: #404040;
+  --color--gray6: #757575;
+  --color--gray7: #bcbcbc;
+  --color--green1: #76cc71;
+  --color--green2: #20de55;
+  --color--input-field-bg: #484950;
+  --color--light-blue: #afcbe3;
+  --color--light-green: #20de5517;
+  --color--light-orange: #d9b77b;
+  --color--lilac: #aeb6ff;
+  --color--warning: #ecd82766;
+  --color--white: #fff;
+  --dimension--container-width: 90rem;
+  --dimension--creation-wrapper-height: 15.625rem;
+  --dimension--navbar-height: 4.25rem;
+  --font--poppins: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --font-weight--light: 300;
+  --font-weight--medium: 500;
+  --font-weight--regular: 400;
+  --opacity--disabled: 0.4;
+  --opacity--hover: 0.8;
+  --transition--ease-in-out: ease-in-out;
+  --transition--ease-in: ease-in;
+  --transition--ease-out: ease-out;
+  --transition--ease: ease;
+  --transition--timing-0: 0s;
+  --transition--timing-1: 100ms;
+  --transition--timing-2: 200ms;
+  --transition--timing-3: 300ms;
+  --transition--timing-4: 400ms;
+  --transition--timing-5: 500ms;
+  --transition--timing-6: 600ms;
+}
+
+/*
+ * Media queries
+ * ============================================================ */
+
+@custom-media --small-viewport (min-width: 481px);
+@custom-media --medium-viewport (min-width: 768px);
+@custom-media --large-viewport (min-width: 1024px);

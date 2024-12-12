@@ -1,0 +1,13 @@
+/*
+ * Base fonts
+ * ============================================================ */
+
+@font-face {
+  font-family: text-security-disc;
+  src: url('/fonts/textSecurity/text-security-disceot');
+  src: url('/fonts/textSecurity/text-security-disc.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/textSecurity/text-security-disc.woff2') format('woff2'),
+    url('/fonts/textSecurity/text-security-disc.woff') format('woff'),
+    url('/fonts/textSecurity/text-security-disc.ttf') format('truetype'),
+    url('/fonts/textSecurity/text-security-disc.svg#text-security') format('svg');
+}
